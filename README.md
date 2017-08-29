@@ -4,5 +4,5 @@
 init去初始化 特别是你的类中包含了其他类 防止空指针 所以在init中初始化<br/>
 
 alt＋方向键  跳过一个单词<br/>
-
-![IMAGE]()
+![image](https://github.com/xuhuawei131/MyIOSApp4/blob/master/raw/master/ScreenShots/EnumDemo.png)<br/>
+![image](https://github.com/xuhuawei131/MyIOSApp4/blob/master/raw/master/ScreenShots/userEnum.png)<br/>
