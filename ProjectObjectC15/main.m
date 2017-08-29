@@ -18,7 +18,7 @@ int main(int argc, const char * argv[]) {
         
         [rectManager printAllRect];
         
-        [rectManager align:3 to:50];
+        [rectManager align:RIGHT to:300];
         
         printf("****************\n");
         

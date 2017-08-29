@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "MyRect.h"
+
+typedef enum {
+    LEFT=0,
+    TOP,
+    RIGHT,
+    BOTTOM
+}ALIGN;
+
 @interface RectManager : NSObject
 {
     
@@ -18,6 +26,6 @@
 -(void)addRect:(MyRect*)myRect;
 -(void)addRectX:(int)x Y:(int)y Width:(int)width Height:(int)height;
 -(void)addRectPoint:(MyPoint*)myPoint Size:(MySize*)mySize;
--(void)align:(int)director to:(int)position;
+-(void)align:(ALIGN)director to:(int)position;
 -(void)printAllRect;
 @end

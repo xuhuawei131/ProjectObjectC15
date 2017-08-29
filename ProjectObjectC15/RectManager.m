@@ -30,13 +30,13 @@
     [self addRect:myRect];
 }
 
--(void)align:(int)director to:(int)position{
+-(void)align:(ALIGN)director to:(int)position{
     for(MyRect* item in array){
-        if(director==0){//左
+        if(director==LEFT){//左
             item.myPoint.x=position;
-        }else if(director==1){//上
+        }else if(director==TOP){//上
             item.myPoint.y=position;
-        }else if(director==2){//右
+        }else if(director==RIGHT){//右
             item.myPoint.x=position-item.mySize.width;
         }else{//下
             item.myPoint.y=position-item.mySize.height;
