@@ -7,11 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "RectManager.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        RectManager* rectManager=[[RectManager alloc]init];
+        [rectManager addRectX:100 Y:100 Width:200 Height:300];
+        [rectManager addRectX:400 Y:50 Width:300 Height:600];
+        [rectManager addRectX:10 Y:80 Width:50 Height:300];
+        [rectManager addRectX:300 Y:45 Width:15 Height:200];
+        
+        [rectManager printAllRect];
+        
+        [rectManager align:3 to:50];
+        
+        printf("****************\n");
+        
+        [rectManager printAllRect];
+        
     }
     return 0;
 }
